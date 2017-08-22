@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+<table id="table1"><tr><td>Qid</td><td>Qtype</td><td>cid</td><td>chid</td></tr></table>
+<select id="selector"></select>
+</body>
+
+
+<script type="application/javascript">
+
+$.ajax({
+	type: "POST",
+	url:"aaaa.php",
+	data:"hi",
+	success: function(data){
+		if(data){
+			data = JSON.parse(data);
+			data.forEach(function(data,index){ 
+	$("#table1").append("<tr><td>" + data.qid + "</td><td>" + data.qtype + "</td><td>" + data.cid + "</td><td>" + data.chid + "</td></tr>");
+	$('#selector').append("<option value="+data.qid+">"+data.qtype+"</option>")
+
+			});
+	    }
+	}
+});
+	var i=0;
+	var a=[1,2,3,4];
+	var b="";
+	for(i= 0; i <a.length; i++){
+        
+			 b+=a[i];
+	}
+console.log(b);
+
+
+
+
+</script>
+
+</body>
+</html>

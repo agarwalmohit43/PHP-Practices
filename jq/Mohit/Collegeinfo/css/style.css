@@ -1,0 +1,12 @@
+ .textbox {
+	border-style: solid;
+	padding: 5px;
+	font-size: 19px;
+	text-align: center;
+	border-width: 3px;
+	border-radius: 50px;
+	border-color: #170e17;
+	font-family: monospace;
+	font-style: italic;
+} 
+		 .textbox:focus { outline:none; } 

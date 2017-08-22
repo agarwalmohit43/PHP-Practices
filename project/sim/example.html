@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Semantic-editable</title>
+    <link href="css/semantic.min.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jquery.tabledit.js"></script>
+
+</head>
+<body>
+<table id="example1" class="ui table">
+  <thead>
+    <tr>
+      <th name="name" data-notnull="true">Name</th>
+      <th name="registrationDate">Registration Date</th>
+      <th name="email">E-mail address</th>
+      <th name="plan" data-notnull="true">Premium Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="1">
+      <td>John Lilki</td>
+      <td data-type="<a href="http://www.jqueryscript.net/time-clock/">date</a>">2013-09-14</td>
+      <td data-type="email">jhlilk22@yahoo.com</td>
+      <td data-type="checkbox" data-checked="Yes" data-unchecked="No">No</td>
+    </tr>
+    <tr id="2">
+      <td>Jamie Harington</td>
+      <td data-type="date">2014-01-11</td>
+      <td data-type="email">jamieharingonton@yahoo.com</td>
+      <td data-type="checkbox" data-checked="Yes" data-unchecked="No">Yes</td>
+    </tr>
+    <tr id="3">
+      <td>Jill Lewis</td>
+      <td data-type="date">2014-11-03</td>
+      <td data-type="email">jilsewris22@yahoo.com</td>
+      <td data-type="checkbox" data-checked="Yes" data-unchecked="No">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/semantic.editableRecord.js"></script>
+    <script src="js/example.js"></script>
+<script>
+    function getGender(){
+        return [{value:"f", text:"female"}, {value:"m", text:"male"}];
+    }
+	
+	
+	$('#my-table').Tabledit({
+
+columns: {
+  identifier: [0, 'id'],                    
+  editable: [[1, 'First Name'], [2, 'Last Name']]
+}
+
+});
+
+$('#example1').editableRecord({
+  idName: '<your id name>',
+  saveUrl:'<your url to save the data>',
+  deleteUrl: '<your url to delete the data>'
+});
+
+
+
+
+
+</script>
+
+//attributes
+idName: null,
+multiple: true,
+addable: true,
+
+//buttons
+saveButton: '<div name="save" class="ui primary button">Save</div>',
+cancellButton: '<div name="cancel" class="ui button">Cancel</div>',
+newButton: '<div class="ui positive button">New</div>',
+deleteButton: '<div class="ui icon button"><i class="trash icon"></i></div>',
+detailButton: '<div class="ui icon button"><i class="unordered list icon"></i></div>',
+orButton: '<div class="or"></div>',
+buttonGroup: '<div class="ui buttons"></div>',
+
+//urls
+createUrl: null,
+updateUrl: null,
+saveUlr: null,
+deleteUrl: null,
+
+//events
+preCreate: jQuery.noop,
+preUpdate: jQuery.noop,
+preSave: jQuery.noop,
+preDelete: jQuery.noop,
+postCreate: jQuery.noop,
+postUpdate: jQuery.noop,
+postSave: jQuery.noop,
+postDelete: jQuery.noop,
+detailButtonClicked: jQuery.noop,
+errorHandler: jQuery.noop
+
+
+</body>
+</html>

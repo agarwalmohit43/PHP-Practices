@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  
+  	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+        
+     <!--   <link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+		<!--<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>-->
+  
+  	<script src="js/main.js"></script>
+    
+    <script src="dist/sweetalert.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+<title>Modal and tab</title>
+<style>
+#login{}
+
+</style>
+<script>
+
+</script>
+</head>
+
+<body>
+
+<button id='modal-launcher' class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">
+					  Please sign In - Modal
+					</button>
+
+
+<input type="button" id="swal" value="swal" data-target="#otpcode" id='modal-launcher' data-toggle="modal" />
+</body>
+</html>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header login_modal_header">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        		<h2 class="modal-title" id="myModalLabel"><em>Sign-In to Your Account</em></h2>
+      		</div>
+      		<div class="modal-body login-modal">
+      			
+      			<br/>
+      			<div class="clearfix"></div>
+      			<div id='social-icons-conatainer'>
+	        		<div class='modal-body-left'>
+	        			<div class="form-group">
+		              		<input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+		              		<i class="fa fa-user login-field-icon"></i>
+		            	</div>
+		
+		            	<div class="form-group">
+		            	  	<input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+		              		<i class="fa fa-lock login-field-icon"></i>
+		            	</div>
+		
+		            	<a href="#" class="btn btn-success modal-login-btn"><em>Sign-In</em></a>
+		            	<a href="#" class="login-link text-center">Reset password?</a>
+	        		</div>
+	        	
+	        		<div class='modal-body-right'>
+	        			<div class="modal-social-icons">
+	        				<a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
+	        				<a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
+	        				<a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
+	        				<a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>
+	        			</div> 
+	        		</div>	
+	        		<div id='center-line'> OR </div>
+	        	</div>																												
+        		<div class="clearfix"></div>
+        		
+        		<div class="form-group modal-register-btn">
+        			<button class="btn btn-default" data-toggle="modal" data-target="#myModal" data-keyboard="true" class="close" data-dismiss="modal"> New User Please Register</button>
+                    
+        		</div>
+      		</div>
+      		<div class="clearfix"></div>
+      		<div class="modal-footer login_modal_footer">
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header login_modal_header">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h2 class="modal-title" id="myModalLabel"><em>Sign-Up<em></h2>
+      		</div>
+      		<div class="modal-body login-modal">
+      			
+                <form id="signup" method="post">
+    <div class="input-group input-group-lg">
+  <span class="input-group-addon glyphicon glyphicon-user"></span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="suusername" required id="supemail" style="width:500px;"">
+</div>
+<br/>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon glyphicon glyphicon-pencil" id="basic-addon1"></span>
+  <input type="password" maxlength="15"  class="form-control" placeholder="Password" aria-describedby="basic-addon1" required name="password" id="suppass" style="width:500px;"">
+</div><br/>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon glyphicon glyphicon-pencil" id="basic-addon1"></span>
+  <input type="password" maxlength="15" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"  required name="password" id="supcpass" style="width:500px;"">
+</div><br/>
+<center><button  class="btn btn-success btn-lg" style="width:200px;" id="signupbtn">Sign-Up</button></center>
+</form>
+                </div>
+      			
+      		<div class="modal-footer login_modal_footer">
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+
+<!-- Modal -->
+<div id="otpcode" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <input type="text" id="otpt" style="width:300px;" /> 
+        <input type="button" value="verify" id="otpbtn"/>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+

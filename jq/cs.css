@@ -1,0 +1,50 @@
+.bold{font-weight:bold; text-decoration:blink;}
+#textareacodinglength{margin:10px;}#textareacodinglength_feedback{margin-top:-5px;margin-left:187px;}
+
+#hoverdiv{display:none;position:absolute;font-size:14px;background:#FFF;padding:7px;color:#404040;border:1px solid #999;top:20px;left:20px;}
+
+ .css-input { border-color:#cccccc; border-radius:49px; border-style:solid; border-width:4px; font-size:17px; text-align:center; padding:5px;  } 
+		 .css-input:focus { outline:none; } 
+.button_example{
+border:1px solid #999999; -webkit-border-radius: 90px; -moz-border-radius: 100px;border-radius:90px;font-size:16px;font-family:arial, helvetica, sans-serif; padding: 5px 15px 5px 15px; text-decoration:none; display:inline-block;text-shadow: 1px 1px 0 rgba(255,255,255,0.3);font-weight:bold; color: #000000;
+ background-color: #E6E6E6; background-image: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#CCCCCC));
+ background-image: -webkit-linear-gradient(top, #E6E6E6, #CCCCCC);
+ background-image: -moz-linear-gradient(top, #E6E6E6, #CCCCCC);
+ background-image: -ms-linear-gradient(top, #E6E6E6, #CCCCCC);
+ background-image: -o-linear-gradient(top, #E6E6E6, #CCCCCC);
+ background-image: linear-gradient(to bottom, #E6E6E6, #CCCCCC);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E6E6E6, endColorstr=#CCCCCC);
+}
+
+.button_example:hover{
+ border:1px solid #7A7A7A;
+ background-color: #cdcdcd; background-image: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), to(#b3b3b3));
+ background-image: -webkit-linear-gradient(top, #cdcdcd, #b3b3b3);
+ background-image: -moz-linear-gradient(top, #cdcdcd, #b3b3b3);
+ background-image: -ms-linear-gradient(top, #cdcdcd, #b3b3b3);
+ background-image: -o-linear-gradient(top, #cdcdcd, #b3b3b3);
+ background-image: linear-gradient(to bottom, #cdcdcd, #b3b3b3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cdcdcd, endColorstr=#b3b3b3);
+}
+
+#slide_up_down{margin-left:auto;margin-right:auto;display:none;text-align:center; width:300px; background:#A0A0A4;padding:5px;font-size:16px;	}
+
+#scroll_test{width:auto;height:80px;}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+	
+}
+.topbtn{ position: fixed;
+    bottom: 2em;
+    right: 0px;display:none;}

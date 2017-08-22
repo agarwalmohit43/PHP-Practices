@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BPPIMT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+ <script src="js/js1.js"></script>
+ <script src="dialogbox/jquery.dialogBox.js"></script>
+ <link rel="stylesheet" href="dialogbox/jquery.dialogbox.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">B.P.P.I.M.T</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Department <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Computer Science and Engineering</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Information &Technology</a></li>
+            <li><a href="#">Electrical Engineering</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div class="jumbotron" >
+      <form id="data" method="post" >
+      
+     <label> <strong><em><font size="5">&nbsp;&nbsp;&nbsp;First Name:</font></em></strong><br/>
+     <input type="text" name="fname" required class="textbox" /> </label><br />
+     <label><strong><em>&nbsp;&nbsp;&nbsp;<font size="5">Last Name:</font></em></strong> <br />
+     <input type="text" name="lname" required class="textbox" /></label><br /> 
+     <label> <strong><em>&nbsp;&nbsp;&nbsp;<font size="5">Email Id:</font></em></strong> <br />
+     <input type="email" name="email" required class="textbox" /></label><br/>
+     <label><strong><em>&nbsp;<font size="5">Gender:</font></em></strong> <input type="radio" name="gender" value="M" required /><em>MALE</em> <input required type="radio" name="gender" value="F" /><em>FEMALE</em><br /></label><br/>
+     <label><font size="5"><button id="submission" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span><em><strong> Submit</strong></em></button></font></label>
+          </form>
+    <div id="display_form_submission" ></div>
+    </div>
+ </div>
+</body>
+</html>
