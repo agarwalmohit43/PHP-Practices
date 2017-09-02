@@ -18,7 +18,6 @@ function signin(e) {
         uname:user,
         pass: $('#password').val()
     }
-	console.log(data);
     $.ajax({
         type: 'POST',
         url: 'php/login.php',

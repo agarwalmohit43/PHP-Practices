@@ -1,0 +1,5 @@
+If there are duplicate salary entry then use:
+1. select salary from (select distinct(salary),empName from employees order by salary desc limit 2) as salary order by salary limit 1;
+
+If there is no duplicate entry for salary:
+1. select salary from (select salary from employees order by salary desc limit 2) as salary order by salary limit 1;

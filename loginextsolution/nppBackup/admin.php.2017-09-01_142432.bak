@@ -137,7 +137,7 @@ include "php/session.php";
             url:"php/fetchDetails.php",
             data:data,
             success: function(data){
-				//debugger;
+
                 if(data){
 					console.log(data);
                     data = JSON.parse(data);

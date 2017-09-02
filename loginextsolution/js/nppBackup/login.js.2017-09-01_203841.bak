@@ -19,7 +19,7 @@ function signin(e) {
         pass: $('#password').val()
     }
 	console.log(data);
-    $.ajax({
+    /*$.ajax({
         type: 'POST',
         url: 'php/login.php',
         data:data,
@@ -38,5 +38,5 @@ function signin(e) {
                 swal("Something went wrong!","Try signing up after some time.","error");
             }
         }
-    });
+    });*/
 }
